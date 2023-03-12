@@ -16,10 +16,11 @@ spanYear.textContent = date.getFullYear();
 
 let myPhoto = "images/me-image.png";
 
-document.querySelector("#photo").setAttribute("src",myPhoto);
+document.querySelector("img").setAttribute("src",myPhoto);
+
+document.querySelector("Header")
 
 /* ARRAYS */
-
 
 var foodList = document.createElement("ul");
 var foods = ["sweet-and-sour chicken", "hot dogs", "arepa", "beef and vegetables stir-fry", "tres leches cake"]; 
@@ -34,9 +35,7 @@ foods.shift();
 
 foods.pop();
 
-
 for (let index = 0; index < foods.length; index++) {
-
     var food = document.createElement("li");
 
     food.appendChild(document.createTextNode(foods[index]));
