@@ -133,4 +133,5 @@ function sortBy(){
 
 getTemples(url);
 
+
 document.querySelector("#sortBy").addEventListener("click",sortBy)
