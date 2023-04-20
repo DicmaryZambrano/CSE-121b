@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8"><!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+
+        <title>vision</title>
+
+        <meta charset="iso-8559-1"/>
+
+        <!--da una referencia a la busqueda-->
+
+ 
+
+    </head>
+
+    <body>
+
+    	<div id="grid-vision">
+
+            <div class="contenedor-titulo">
+                <header>Mision</header>
+            </div>
+
+    		<div class="contenedor-inicio">
+
+            	<div id="grid-navegacion">
+
+                	<div class="contenedor-vision">
+
+                        <h1>Nuestra Vision</h1>
+
+                        <p>
+                            Tenemos como visión consolidar la escuela como un espacio para el quehacer y el
+                            desarrollo del colectivo escuela, familia y comunidad, con la instauración de una cultura escolar y
+                            de relaciones entre los diversos actores involucrados que tengan como centro el progreso integral
+                            de los Niños, Niñas, Jóvenes y Adolescentes con Retardo Mental, con miras a la adquisición de
+                            los aprendizajes que les permita la prosecución escolar a instancias que favorecerán y
+                            eventualmente consolidaran la efectiva inclusión social, a través del programa PROCOINES de
+                            inclusión escolar, donde se les da continuidad en la escolarización y a su vez son ingresados en el
+                            Sistema de Gestión Escolar.
+                        </p>
+
+                	</div>  
+                	
+                	<div class="contenedor-portada">
+						<img class="logo-institucion" src="../imagenes/logo_institucion.jpg">	
+            		</div>
+
+    			</div>
+
+				<footer>
+					<a href="inicio.html">
+						<img src="../imagenes/salir.png">
+                        <p>regresar</p>
+					</a>
+				</footer>
+
+   			</div>
+		</div>
+    </body>
+
+    <style>
+
+            header{
+
+                color: black;
+
+                font-family: Arial;
+
+                font-size: 50px;
+
+                align-self: center;
+
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+            }
+
+            body{
+            	margin: 0px;
+
+                text-align: center;
+
+                color: black;
+
+                background: white;
+
+                height: 100%;
+
+                font-size: 20px;
+
+                font-family: sans-serif;
+
+            }
+
+            a{
+            	text-decoration: none;
+				color: black;
+            }
+
+            a:hover{
+            	text-decoration: dotted;
+				color: blueviolet;
+            }
+
+            footer a{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+			.contenedor-vision {
+                text-align: left;
+
+                width: 700px;
+
+                padding-top: 80px;
+			}
+
+			#grid-vision {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+  				grid-template-rows: 200px 1fr 200px;
+			}
+
+			#grid-navegacion {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+  				grid-template-rows: 1fr;
+
+				font-size: 30px;
+
+			}
+
+            input{
+                width: 100%;
+                padding: 20px;
+                border-radius: 20px;
+
+                background-color: rgb(231, 231, 231);
+
+                border: none;
+            }
+
+			.portada{
+				grid-row-start: 0;
+				grid-row-end: 1;
+				grid-column-start: 1;
+				grid-column-end: 2;
+			}
+
+			.contenedor-titulo{
+				grid-row-start: 0;
+				grid-row-end: 1;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+				display: flex;
+				justify-content: center;
+                padding: 20px;
+
+                background: linear-gradient(#bad9f7, #babaf7);
+
+                height: 100px;
+			}
+
+			.contenedor-inicio{
+				grid-row-start: 1;
+				grid-row-end: 2;
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
+
+			.contenedor-portada {
+				grid-row-start: 1;
+				grid-row-end: 2;
+				grid-column-start: 1;
+				grid-column-end: 2;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.logo-institucion {
+				width: 50%;
+				height: auto;
+
+                padding: 50px;
+			}
+
+			footer{
+				grid-row-start: 2;
+				grid-row-end: 3;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+				display: flex;
+				justify-content: center;
+			}
+
+			footer img{
+				padding: 20px;
+				width: 80px;
+				height: auto;
+			}
+
+            footer p{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+    </style>
+</html>

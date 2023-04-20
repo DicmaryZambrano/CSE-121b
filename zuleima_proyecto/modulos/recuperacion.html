@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8"><!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+
+        <title>olvido de contraseña</title>
+
+        <meta charset="iso-8559-1"/>
+
+        <!--da una referencia a la busqueda-->
+
+ 
+
+    </head>
+
+    <body>
+
+    	<div class="gradiante-linear">
+
+    		<div class="contenedor-login">
+		        <header>¿Olvidaste tu contraseña?</header>
+
+		        <p>contraseña nueva</p>
+
+		        <form enctype="text/plain" method="POST" action="validar.php">
+
+                    Usuario:<br></br><input type="text" name="user" placeholder="ingrese su usuario" minlength="10" required=true><br></br>
+
+		            <br></br>
+
+		        <button  name="button" >Enviar</button>
+
+		        <div class="fondo-transparente"></div>
+
+		        </form>
+    		</div>
+
+   	</div>
+
+    </body>
+
+    <style>
+
+            header{
+
+              color: black;
+
+              font-family: Arial;
+
+            }
+
+            body{
+            	margin: 0px;
+
+                text-align: center;
+
+                color: black;
+
+                background: #babaf7;
+
+                height: 100%;
+
+                font-size: 25px;
+            }
+
+            button{
+
+                text-align: center;
+
+                color: black;
+
+                background: #baf7f7;
+
+                height: 40px;
+
+                width: 200px;
+
+                border-style: none;
+
+                border-radius: 5px;
+
+                font-size: 18px;
+            }
+
+            header{
+                padding-top: 60px;
+            }
+
+            .gradiante-linear {
+			  	background: linear-gradient(#bad9f7, #babaf7);
+			  	position: absolute;
+			  	height: 100%;
+			  	width: 100%;
+			  	display: flex;
+			  	justify-content: center;
+			  	align-items: center;
+			}
+
+			.contenedor-login {
+				padding: 20px;
+				width: 600px;
+  				height: 500px;
+  				border-radius: 15px;
+  				background: rgba(255, 255, 255, 0.3);
+			}
+            input{
+                width: 50%;
+                padding: 20px;
+                border-radius: 20px;
+
+                background-color: rgb(255, 255, 255);
+
+                border: none;
+            }
+    </style>
+
+</html>

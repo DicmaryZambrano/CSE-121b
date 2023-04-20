@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8"><!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+
+        <title>menu administracion</title>
+
+        <meta charset="iso-8559-1"/>
+
+        <!--da una referencia a la busqueda-->
+
+ 
+
+    </head>
+
+    <body>
+
+    	<div id="grid-menu">
+
+            <div class="contenedor-logo">
+                <img class="logo-edu" src="../imagenes/logo_ministerio_educacion.jpg">
+                <img class="logo-zamora" src="../imagenes/zamora.png">
+            </div>
+
+    		<div class="contenedor-menu">
+                	
+                <div class="contenedor-portada">
+                    <img class="logo-institucion" src="../imagenes/logo_institucion.jpg">
+                    <img class= "foto-grupal" src="../imagenes/alumnos.jpg">	
+                </div>
+
+				<footer>
+					<a href="">
+						<img src="../imagenes/agregar.png">
+					</a>
+					<a href="">
+						<img src="../imagenes/modificar.png">
+					</a>
+					<a href="">
+						<img src="../imagenes/eliminar.png">
+					</a>
+					<a href="../index.html">
+						<img src="../imagenes/salir.png">
+					</a>
+				</footer>
+
+   			</div>
+		</div>
+    </body>
+
+    <style>
+
+            header{
+
+              color: black;
+
+              font-family: Arial;
+
+            }
+
+            body{
+            	margin: 0px;
+
+                text-align: center;
+
+                color: black;
+
+                background: white;
+
+                height: 100%;
+
+                font-size: 20px;
+            }
+
+			nav{
+				display: flex;
+				flex-direction: column;
+			}
+
+			nav a{
+				padding: 20px;
+			}
+
+            a{
+            	text-decoration: none;
+				color: black;
+            }
+
+            a:hover{
+            	text-decoration: dotted;
+				color: blueviolet;
+            }
+
+            .gradiante-linear {
+            	background: linear-gradient(#bad9f7, #babaf7);
+			  	display: flex;
+			  	justify-content: center;
+			  	align-items: center;
+			}
+
+			.contenedor-login {
+				padding: 10px;
+				width: 300px;
+  				height: 300px;
+  				border-radius: 15px;
+  				background: rgba(255, 255, 255, 0.3);
+
+			}
+
+			#grid-menu {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+  				grid-template-rows: 200px 1fr 200px;
+			}
+
+			.gradiante-linear{
+				grid-row-start: 0;
+				grid-row-end: 1;
+				grid-column-start: 2;
+				grid-column-end: 3;
+
+				display: flex;
+				flex-direction: column;
+
+				height: 100%;
+				width: 80%;
+
+				border-radius: 20px;
+				justify-content: space-evenly;
+			}
+
+			.portada{
+                height: auto;
+                display: inline;
+			}
+
+			.contenedor-logo{
+				grid-row-start: 0;
+				grid-row-end: 1;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.contenedor-logo img{
+				width: 15%;
+				height: auto;
+				padding: 50px;
+			}
+
+			.contenedor-menu{
+				grid-row-start: 1;
+				grid-row-end: 2;
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
+
+			.contenedor-portada {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.logo-institucion {
+				width: 10%;
+				height: auto;
+			}
+
+			.foto-grupal {
+				border-radius: 50% 50% 0 0;
+			}
+
+			footer{
+				grid-row-start: 2;
+				grid-row-end: 3;
+				grid-column-start: 1;
+				grid-column-end: 4;
+
+				display: flex;
+				justify-content: center;
+			}
+
+			footer img{
+				padding: 30px;
+				width: 80px;
+				height: auto;
+			}
+    </style>
+</html>
